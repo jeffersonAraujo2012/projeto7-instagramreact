@@ -1,0 +1,41 @@
+.storie-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-right: 1rem;
+}
+
+.storie-info:last-child {
+  margin-right: 0;
+}
+
+.storie-info div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  background-image: url("../../images/stories_background_4.svg");
+  background-size: cover;
+
+  border-radius: 100%;
+  width: 4.125rem;
+  height: 4.125rem;
+}
+
+.storie-info img {
+  width: 3.5rem;
+}
+
+.storie-info p {
+  color: var(--font-primary-color);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-top: 2px;
+
+  max-width: 4rem;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}

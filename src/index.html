@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/utils.css" rel="stylesheet" />
+    <link href="./css/layout.css" rel="stylesheet" />
+    <link href="./css/components/header.css" rel="stylesheet" />
+    <link href="./css/components/post.css" rel="stylesheet" />
+    <link href="./css/components/storie-info.css" rel="stylesheet" />
+    <link href="./css/components/perfil.css" rel="stylesheet" />
+    <link href="./css/components/side-bar.css" rel="stylesheet" />
+    <link href="./css/components/comments.css" rel="stylesheet" />
+    <title>Instagram</title>
+  </head>
+  <body>
+    <header class="header-page">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <div class="v-separator"></div>
+          <a href="#"><img src="./images/Instagram_logo.svg" /></a>
+          <button><ion-icon name="paper-plane-outline"></ion-icon></button>
+        </div>
+
+        <div class="search">
+          <input type="text" placeholder="Pesquisar" />
+        </div>
+
+        <div class="options">
+          <button><ion-icon name="paper-plane-outline"></ion-icon></button>
+          <button><ion-icon name="compass-outline"></ion-icon></button>
+          <button><ion-icon name="heart-outline"></ion-icon></button>
+          <button><ion-icon name="person-outline"></ion-icon></button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="stories-area">
+        <div class="storie-info">
+          <div>
+            <img src="./images/9gag 1.svg" alt="Logo 9gag" />
+          </div>
+          <p>9gag</p>
+        </div>
+
+        <div class="storie-info">
+          <div>
+            <img src="./images/meowed 1.svg" alt="Logo meowed" />
+          </div>
+          <p>meowed</p>
+        </div>
+
+        <div class="storie-info">
+          <div><img src="./images/barked 1.svg" alt="Logo barked" /></div>
+          <p>barked</p>
+        </div>
+
+        <div class="storie-info">
+          <div>
+            <img
+              src="./images/nathanwpylestrangeplanet 1.svg"
+              alt="Logo Nathanwpylestrangeplanet"
+            />
+          </div>
+          <p>nathanwpylestrangeplanet</p>
+        </div>
+
+        <div class="storie-info">
+          <div>
+            <img
+              src="./images/wawawiwacomicsa 1.svg"
+              alt="Logo wawawiwacomicsa"
+            />
+          </div>
+          <p>wawawiwacomicsa</p>
+        </div>
+
+        <div class="storie-info">
+          <div>
+            <img src="./images/respondeai 1.svg" alt="Logo Responde aí" />
+          </div>
+          <p>respondeaí</p>
+        </div>
+
+        <div class="storie-info">
+          <div>
+            <img src="./images/filomoderna 1.svg" alt="Logo filo moderna" />
+          </div>
+          <p>filomoderna</p>
+        </div>
+
+        <div class="storie-info">
+          <div>
+            <img
+              src="./images/memeriagourmet 1.svg"
+              alt="Logo Memeria Goumert"
+            />
+          </div>
+          <p>Memeriagoumert</p>
+        </div>
+
+        <button>
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+      </section>
+
+      <section class="post-area">
+        <article class="post">
+          <header class="post__header">
+            <div class="author">
+              <img
+                src="./images/playstation_perfil.jpg"
+                alt="Perfil Playstation Brasil"
+              />
+              <h2>playstation_br</h2>
+            </div>
+            <button><ion-icon name="ellipsis-horizontal"></ion-icon></button>
+          </header>
+
+          <div class="post__content post__content--video">
+            <video controls autoplay muted>
+              <source
+                src="./videos/Hollow Knight - Nightmare.mp4"
+                type="video/mp4"
+              />
+              <source
+                src="./videos/Hollow Knight - Nightmare.ogx"
+                type="video/ogg"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="post__actions">
+            <div class="main">
+              <button><ion-icon name="heart-outline"></ion-icon></button>
+              <button><ion-icon name="chatbubble-outline"></ion-icon></button>
+              <button><ion-icon name="paper-plane-outline"></ion-icon></button>
+            </div>
+            <div class="other">
+              <button><ion-icon name="bookmark-outline"></ion-icon></button>
+            </div>
+          </div>
+
+          <div class="post__info">
+            <img src="./images/gameplayrj.jpg" alt="Perfil gameplayrj" />
+            <p>
+              Curtido por <a href="#">gameplayrj</a> e
+              <button>outras 1.985.543 pessoas</button>
+            </p>
+          </div>
+
+          <div class="post__comments">
+            <div class="comment">
+              <img src="./images/gameplayrj.jpg" alt="perfil gameplayrj" />
+
+              <div>
+                <p class="comment__content">
+                  <strong class="author">gameplayrj</strong> Um dos melhores
+                  jogos estilo metroidvania 2D que já joguei. Correção um dos
+                  não, <strong>O MELHOR</strong>.
+                </p>
+
+                <div class="comment__info">
+                  <span class="info-time">1 dia</span>
+                  <span class="likes">3 curtidas</span>
+                  <button class="answer">Responder</button>
+                </div>
+              </div>
+
+              <button class="comment__like">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="post__send-comment">
+            <input type="text" placeholder="Adicione um comentário..." />
+            <button>Publicar</button>
+          </div>
+        </article>
+
+        <article class="post">
+          <header class="post__header">
+            <div class="author">
+              <img src="./images/logo-javascript.svg" alt="Perfil javascript" />
+              <h2>Javascript</h2>
+            </div>
+            <button><ion-icon name="ellipsis-horizontal"></ion-icon></button>
+          </header>
+
+          <div class="post__content">
+            <img
+              src="./images/post-javascript.jpeg"
+              alt="Linhas de código em javascript"
+            />
+          </div>
+
+          <div class="post__actions">
+            <div class="main">
+              <button><ion-icon name="heart-outline"></ion-icon></button>
+              <button><ion-icon name="chatbubble-outline"></ion-icon></button>
+              <button><ion-icon name="paper-plane-outline"></ion-icon></button>
+            </div>
+            <div class="other">
+              <button><ion-icon name="bookmark-outline"></ion-icon></button>
+            </div>
+          </div>
+
+          <div class="post__info">
+            <img src="./images/user-universe.jpg" alt="Perfil Universe" />
+            <p>
+              Curtido por <a href="#">Universe</a> e
+              <button>outras 245.279 pessoas</button>
+            </p>
+          </div>
+
+          <div class="post__comments">
+            <div class="comment">
+              <img src="./images/gameplayrj.jpg" alt="perfil gameplayrj" />
+
+              <div>
+                <p class="comment__content">
+                  <strong class="author">gameplayrj</strong> Foi com essa
+                  linguagem que aprendi a programar
+                </p>
+
+                <div class="comment__info">
+                  <span class="info-time">4785 dia</span>
+                  <span class="likes"> curtidas</span>
+                  <button class="answer">Responder</button>
+                </div>
+              </div>
+
+              <button class="comment__like">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="post__send-comment">
+            <input type="text" placeholder="Adicione um comentário..." />
+            <button>Publicar</button>
+          </div>
+        </article>
+
+        <article class="post">
+          <header class="post__header">
+            <div class="author">
+              <img src="./images/user-universe.jpg" alt="Perfil javascript" />
+              <h2>universe</h2>
+            </div>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </header>
+
+          <div class="post__content">
+            <img src="./images/universe.jpg" alt="Imagem do cosmos" />
+          </div>
+
+          <div class="post__actions">
+            <div class="main">
+              <button><ion-icon name="heart-outline"></ion-icon></button>
+              <button><ion-icon name="chatbubble-outline"></ion-icon></button>
+              <button><ion-icon name="paper-plane-outline"></ion-icon></button>
+            </div>
+            <div class="other">
+              <button><ion-icon name="bookmark-outline"></ion-icon></button>
+            </div>
+          </div>
+
+          <div class="post__info">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/800px-2018_Animal_Planet_logo.svg.png"
+              alt="Perfil Animal Planet"
+            />
+            <p>
+              Curtido por <a href="#">Animal Planet</a> e
+              <button>outras 1.345.956 pessoas</button>
+            </p>
+          </div>
+
+          <div class="post__comments">
+            <div class="comment">
+              <img src="./images/universe.jpg" alt="perfil universe" />
+
+              <div>
+                <p class="comment__content">
+                  <strong class="author">universe</strong> Uma das simulações
+                  mais fidedignas de um buraco negro foi desenvolvida para um
+                  filme, Interestelar, hoje é utilizada por cientistas para
+                  estudos que ajudarão a compreender essas megas estruturas.
+                </p>
+
+                <div class="comment__info">
+                  <span class="info-time">3 dia</span>
+                  <span class="likes">3245 curtidas</span>
+                  <button class="answer">Responder</button>
+                </div>
+              </div>
+
+              <button class="comment__like">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </div>
+
+            <div class="comment">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADgCAMAAADCMfHtAAAAeFBMVEUAAAD///8QEBAhISGkpKS6urq1tbWysrJUVFQ+Pj5lZWXKysre3t4wMDCWlpacnJyEhITm5uZDQ0P5+fnz8/N/f38tLS1xcXHQ0NCNjY1iYmLa2tqpqam/v78TExPGxsbq6upNTU03NzceHh5JSUl2dnaRkZEmJiaA8q30AAADyElEQVR4nO3X2XqyOgCFYWjFARURUOtA66+t3v8dbjIICQRF3CfLZ31HVSDwShjqXT/ePO/Te/coxI9C/CjEj0L8KMSPQvwoxI9C/CjEj0L8KMSPQvwoxI9C/CjEj0L8KMSPQvwoxI9C/CjEj0L8KMSPQvwoxI9C/CjEj0L8KMSPQvwoxI9C/CjEj0L8KMSPQvwoxI9C/CjEj0L8KMSPQvwoxI9C/CjEj0L8KMSPQvwoxO9thMlunMxdGnjhOYyGo0G0+te2ArJwEgfLdH8IP+6uhSrcDfa+v1/8Pl4TUZgsCp0fhN3WhhOGQVrwhuPOG2AJd3mh86cdz54KSLg+iLOXRU9u9v8KJ90nz7NtxLXnzzZPb+gQhkvfbnY77q/aAj+d2qQsrY21q4/l5/rePq8vEOdHWfRev41xInH6/K/Wh95TwrFj1zu1aOpYFBubFr/A9OFYvlq0bhV63l59LM/XQH78Snr4XMKhGGxgddhWwixalAXVAYuiutgTN4ZsURtMnYjPYNjoYI1UnG/DN+tz/txCcVQtV7MQzswvfoovqnn6LQ/lZCwX03rZ57CSTI519LyL/CN9/vq79ZowsITezpxqtw1ahJ9zo3VzufjxAi9U0kNzeefcwnwVV/1NzAO2hEtb6I2quVVu0CLMzQvw6FghzhJ9a1ueHIs71xRemneA47o64HQ/K5M/sPXeexTfrMqPd4RDcwfudbZq4aInTed4WjjumFnrEn9kbXuV363Noe4I07+VLHZdZeeZ2vX8vHIs7Z7riZ9sI6OtOFOT8oDt9nrv3/qCOl+sSfdIeOfA9FPxx/uz5v3zdXinERebulU3rsNbpxo80N/3F+pJvJV3HD974UrsIDw+FE4a51ZPu95C/So09j70e1TcuuqjmsLd2C4Rwt/ygF3CTbwykkd0Ljc4jkO7UyW8TsyS203rlKpL8Co+qPFqL0svCTPH7US/uLTOUit5C1RnbuEaqxLW048l/a531OOt5Q3aT3u+1DSFzSknLgdZx1cUObGG1Z92A7VS0CoM1QfjpxxaW74sLObFYWQV3a7zKA+CDrv5KFYLftQj4zey30ovt7FisZJdLjc550O5V3PEjfwq7/XYAPoPuGcU4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4vf2wv8AX9ooUbWfkSAAAAAASUVORK5CYII="
+                alt="perfil spacex"
+              />
+
+              <div>
+                <p class="comment__content">
+                  <strong class="author">spacex</strong> Quem sabe um dia?
+                </p>
+
+                <div class="comment__info">
+                  <span class="info-time">2 dia</span>
+                  <span class="likes">1789 curtidas</span>
+                  <button class="answer">Responder</button>
+                </div>
+              </div>
+
+              <button class="comment__like">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="post__send-comment">
+            <input type="text" placeholder="Adicione um comentário..." />
+            <button>Publicar</button>
+          </div>
+        </article>
+
+        <article class="post">
+          <header class="post__header">
+            <div class="author">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/800px-2018_Animal_Planet_logo.svg.png"
+                alt="Perfil Animal Planet"
+              />
+              <h2>animalplanet</h2>
+            </div>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </header>
+
+          <div class="post__content">
+            <img
+              src="https://d5y9g7a5.rocketcdn.me/wp-content/uploads/2020/01/arara-azul-carateristicas-e-comportamento-5.jpg"
+              alt="Imagem do cosmos"
+            />
+          </div>
+
+          <div class="post__actions">
+            <div class="main">
+              <button><ion-icon name="heart-outline"></ion-icon></button>
+              <button><ion-icon name="chatbubble-outline"></ion-icon></button>
+              <button><ion-icon name="paper-plane-outline"></ion-icon></button>
+            </div>
+            <div class="other">
+              <button><ion-icon name="bookmark-outline"></ion-icon></button>
+            </div>
+          </div>
+
+          <div class="post__info">
+            <img src="./images/greenpeacebrasil.jpg" alt="Perfil Universe" />
+            <p>
+              Curtido por <a href="#">greenpeacebrasil</a> e
+              <button>outras 187.354 pessoas</button>
+            </p>
+          </div>
+
+          <div class="post__comments">
+            <div class="comment">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/800px-2018_Animal_Planet_logo.svg.png"
+                alt="perfil animalplanet"
+              />
+
+              <div>
+                <p class="comment__content">
+                  <strong class="author">animalplanet</strong> Uma das aves mais
+                  belas e raras da natureza, ameaçada de extinsão devido a caça
+                  e tráfico ilegal. Vive exclusivamente no Brasil na região da
+                  caatinga baiana. Ajude a preservar!
+                </p>
+
+                <div class="comment__info">
+                  <span class="info-time">5 dia</span>
+                  <span class="likes">1478 curtidas</span>
+                  <button class="answer">Responder</button>
+                </div>
+              </div>
+
+              <button class="comment__like">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </div>
+
+            <div class="comment">
+              <img
+                src="./images/greenpeacebrasil.jpg"
+                alt="perfil greenpeacebrasil"
+              />
+
+              <div>
+                <p class="comment__content">
+                  <strong class="author">greenpeacebrasil</strong> Nós do
+                  Greenpeace Brasil apoiamos esta causa.
+                </p>
+
+                <div class="comment__info">
+                  <span class="info-time">5 dia</span>
+                  <span class="likes">980 curtidas</span>
+                  <button class="answer">Responder</button>
+                </div>
+              </div>
+
+              <button class="comment__like">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </div>
+
+            <div class="comment">
+              <img
+                src="./images/razoesparaacreditar 1.png"
+                alt="perfil razoesparaacreditar"
+              />
+
+              <div>
+                <p class="comment__content">
+                  <strong class="author">razoesparaacreditar</strong> A natureza
+                  é realmente linda, não é?
+                </p>
+
+                <div class="comment__info">
+                  <span class="info-time">2 dia</span>
+                  <span class="likes">127 curtidas</span>
+                  <button class="answer">Responder</button>
+                </div>
+              </div>
+
+              <button class="comment__like">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="post__send-comment">
+            <input type="text" placeholder="Adicione um comentário..." />
+            <button>Publicar</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <aside>
+      <header class="perfil perfil--my">
+        <a href="#">
+          <img src="./images/catanacomics 1.png" alt="Minha imagem de perfil" />
+        </a>
+        <div>
+          <a href="#">catanacomics</a>
+          <p>Catana</p>
+        </div>
+      </header>
+
+      <section class="suggestions">
+        <div class="text">
+          <p>Sugestões para você</p>
+          <a href="#">Ver tudo</a>
+        </div>
+
+        <div class="suggestion">
+          <div class="perfil perfil--other">
+            <a href="#">
+              <img
+                src="./images/badvibesmemes 1.png"
+                alt="Perfil bad vibes meme"
+              />
+            </a>
+            <div>
+              <a href="https://www.instagram.com/bad.vibes.memes/"
+                >bad.vibes.memes</a
+              >
+              <p>Segue você</p>
+            </div>
+          </div>
+
+          <button class="follow">Seguir</button>
+        </div>
+
+        <div class="suggestion">
+          <div class="perfil perfil--other">
+            <a href="#">
+              <img src="./images/chibirdart 1.png" alt="Perfil chibirdart" />
+            </a>
+            <div>
+              <a href="https://www.instagram.com/chibirdart/">chibirdart</a>
+              <p>Segue você</p>
+            </div>
+          </div>
+
+          <button class="follow">Seguir</button>
+        </div>
+
+        <div class="suggestion">
+          <div class="perfil perfil--other">
+            <a href="#">
+              <img
+                src="./images/razoesparaacreditar 1.png"
+                alt="Perfil razoes para acreditar"
+              />
+            </a>
+            <div>
+              <a href="https://www.instagram.com/razoesparaacreditar/"
+                >razoesparaacreditar</a
+              >
+              <p>Novo no Instagram</p>
+            </div>
+          </div>
+
+          <button class="follow">Seguir</button>
+        </div>
+
+        <div class="suggestion">
+          <div class="perfil perfil--other">
+            <a href="#">
+              <img
+                src="./images/adorableanimals 1.png"
+                alt="Perfil adorable animals"
+              />
+            </a>
+            <div>
+              <a href="https://www.instagram.com/adorable_animals/"
+                >adorable_animals</a
+              >
+              <p>Segue você</p>
+            </div>
+          </div>
+
+          <button class="follow">Seguir</button>
+        </div>
+
+        <div class="suggestion">
+          <div class="perfil perfil--other">
+            <a href="#">
+              <img
+                src="./images/smallcutecats 1.png"
+                alt="Perfil small cute cats"
+              />
+            </a>
+            <div>
+              <a href="https://www.instagram.com/smallcutecats/"
+                >smallcutecats</a
+              >
+              <p>Segue você</p>
+            </div>
+          </div>
+
+          <button class="follow">Seguir</button>
+        </div>
+      </section>
+
+      <footer>
+        <nav class="nav-footer">
+          <a href="#">Sobre</a> • <a href="#">Ajuda</a> •
+          <a href="#">Imprensa</a> • <a href="#">API</a> •
+          <a href="#">Carreiras</a> • <a href="#">Privacidade</a> •
+          <a href="#">Termos</a> • <a href="#">Localizações</a> •
+          <a href="#">Contas mais relevantes</a> • <a href="#">Hashtags</a> •
+          <a href="#">Idioma</a>
+        </nav>
+
+        <p class="copy">© 2021 INSTAGRAM DO FACEBOOK</p>
+      </footer>
+    </aside>
+
+    <nav class="nav-mobile">
+      <a href=""><ion-icon name="home"></ion-icon></a>
+      <a href=""><ion-icon name="search-outline"></ion-icon></a>
+      <a href=""><ion-icon name="add-circle-outline"></ion-icon></a>
+      <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+      <a href=""><ion-icon name="person-outline"></ion-icon></a>
+    </nav>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

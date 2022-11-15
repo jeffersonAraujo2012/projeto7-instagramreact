@@ -1,0 +1,44 @@
+.perfil {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 1.5rem;
+}
+
+.perfil--other {
+  margin-bottom: 0px;
+}
+
+.perfil img {
+  border-radius: 100%;
+}
+
+.perfil--my img {
+  margin-right: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.perfil--other img {
+  margin-right: 0.75rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.perfil div a {
+  color: var(--font-primary-color);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1rem;
+}
+
+.perfil div p {
+  color: var(--font-secundary-color);
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1rem;
+}
+
+.perfil--other div p:nth-child(2) {
+  font-size: 0.75rem;
+}
