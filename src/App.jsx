@@ -2,6 +2,7 @@ import NavBar from "./components/NavBar";
 import Corpo from "./components/Corpo";
 import Stories from "./components/Stories";
 import Posts from "./components/Posts";
+import SideBar from "./components/SideBar";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <Stories />
         <Posts />
       </Corpo>
+      <SideBar />
     </>
   );
 }
