@@ -40,8 +40,8 @@ export default function Posts() {
     },
   ];
   return (
-    <section class="post-area">
-      {posts.map((post) => {
+    <section className="post-area">
+      {posts.map((post,index) => {
         return (
           <Post
             imageAuthor={post.imageAuthor}
@@ -49,6 +49,7 @@ export default function Posts() {
             imagePost={post.imagePost}
             altImagePost={post.altImagePost}
             likedBy={post.likedBy}
+            key={post.author+index}
           />
         );
       })}

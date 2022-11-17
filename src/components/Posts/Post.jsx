@@ -37,8 +37,10 @@ export default function Post(props) {
       <div className="post__info">
         <img src={props.likedBy.image} alt={"Perfil " + props.likedBy.perfil} />
         <p>
-          Curtido por <a href="#">{props.likedBy.perfil}</a> e
-          <button>outras {props.likedBy.numLikes} pessoas</button>
+          Curtido por <a href="#">{props.likedBy.perfil}</a> e&nbsp;
+          <button>
+            outras {props.likedBy.numLikes.toLocaleString("pt-br")} pessoas
+          </button>
         </p>
       </div>
     </article>
