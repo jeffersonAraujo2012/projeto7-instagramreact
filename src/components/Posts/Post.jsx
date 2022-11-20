@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export default function Post(props) {
   const [like, setLike] = useState(false);
+  const [saved, setSaved] = useState(false);
   const [numLikes, setNumLikes] = useState(props.likedBy.numLikes);
 
   function handlerDoubleClickLike(e) {
@@ -13,6 +14,11 @@ export default function Post(props) {
     setLike(!like);
     if (like === true) setNumLikes(numLikes - 1);
     else setNumLikes(numLikes + 1);
+  }
+
+  function handlerToggleSave() {
+    console.log("teste");
+    setSaved(!saved);
   }
 
   return (
@@ -52,8 +58,12 @@ export default function Post(props) {
           </button>
         </div>
         <div className="other">
-          <button>
-            <ion-icon name="bookmark-outline"></ion-icon>
+          <button onClick={handlerToggleSave}>
+            {saved ? (
+              <ion-icon name="bookmark"></ion-icon>
+            ) : (
+              <ion-icon name="bookmark-outline"></ion-icon>
+            )}
           </button>
         </div>
       </div>
