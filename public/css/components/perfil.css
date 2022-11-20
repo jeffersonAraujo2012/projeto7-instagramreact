@@ -33,10 +33,18 @@
 }
 
 .perfil div p {
+  display: flex;
+  align-items: center;
   color: var(--font-secundary-color);
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1rem;
+}
+
+.perfil div p > ion-icon {
+  color: var(--font-secundary-color);
+  font-size: 0.875rem;
+  cursor: pointer;
 }
 
 .perfil--other div p:nth-child(2) {
