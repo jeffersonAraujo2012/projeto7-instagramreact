@@ -22,7 +22,7 @@ export default function Post(props) {
   }
 
   return (
-    <article className="post">
+    <article className="post" data-test="post">
       <header className="post__header">
         <div className="author">
           <img src={props.imageAuthor} alt={"Perfil " + props.author} />
@@ -38,12 +38,13 @@ export default function Post(props) {
           src={props.imagePost}
           alt={props.altImagePost}
           onDoubleClick={handlerDoubleClickLike}
+          data-test="post-image"
         />
       </div>
 
       <div className="post__actions">
         <div className="main">
-          <button onClick={handlerBtnLike}>
+          <button onClick={handlerBtnLike} data-test="like-post">
             {like ? (
               <ion-icon name="heart"></ion-icon>
             ) : (
@@ -58,7 +59,7 @@ export default function Post(props) {
           </button>
         </div>
         <div className="other">
-          <button onClick={handlerToggleSave}>
+          <button onClick={handlerToggleSave} data-test="save-post">
             {saved ? (
               <ion-icon name="bookmark"></ion-icon>
             ) : (
@@ -72,7 +73,7 @@ export default function Post(props) {
         <img src={props.likedBy.image} alt={"Perfil " + props.likedBy.perfil} />
         <p>
           Curtido por <a href="#">{props.likedBy.perfil}</a> e&nbsp;
-          <button>outras {numLikes.toLocaleString("pt-br")} pessoas</button>
+          <button>outras <span data-test="likes-number">{numLikes.toLocaleString("pt-br")}</span> pessoas</button>
         </p>
       </div>
     </article>

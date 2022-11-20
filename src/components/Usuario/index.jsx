@@ -17,19 +17,21 @@ export default function Usuario() {
   }
 
   return (
-    <div className="perfil perfil--my">
+    <div className="perfil perfil--my" data-test="user">
       <a href="#">
         <img
           src={imgUsuario}
           alt="Minha imagem de perfil"
           onClick={handlerEditarImgUsuario}
+          data-test="profile-image"
         />
       </a>
       <div>
         <a href="#">catanacomics</a>
-        <p>
+        <p data-test="name">
           {nomeUsuario}&nbsp;
           <ion-icon
+            data-test="edit-name"
             onClick={handlerEditarNomeUsuario}
             name="pencil-outline"
           ></ion-icon>
