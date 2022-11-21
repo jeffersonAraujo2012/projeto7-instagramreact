@@ -149,3 +149,8 @@ button:hover {
     border-top: 1px solid var(--border-color);
   }
 }
+
+ion-icon[name="heart"],
+ion-icon[name="heart"]:hover {
+  color: red !important;
+}

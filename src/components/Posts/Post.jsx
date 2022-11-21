@@ -1,11 +1,13 @@
 import { useState } from "react";
+import Comentario from "./Comentario";
 
 export default function Post(props) {
   const [like, setLike] = useState(false);
   const [saved, setSaved] = useState(false);
   const [numLikes, setNumLikes] = useState(props.likedBy.numLikes);
+  const [comentarios, setComentarios] = useState(props.comentarios);
 
-  function handlerDoubleClickLike(e) {
+  function handlerDoubleClickLike() {
     if (like === false) setNumLikes(numLikes + 1);
     setLike(true);
   }
@@ -19,6 +21,22 @@ export default function Post(props) {
   function handlerToggleSave() {
     console.log("teste");
     setSaved(!saved);
+  }
+
+  function handlerEnviarComentario(e) {
+    e.preventDefault();
+    const inputComentario = e.target.querySelector("input");
+    const novoComentario = {
+      imgAutor: "./images/catanacomics 1.png",
+      autor: "catanacomics",
+      conteudo: inputComentario.value,
+      info: {
+        tempo: "Hoje",
+        curtidas: 0,
+      },
+    };
+    setComentarios([...comentarios, novoComentario]);
+    inputComentario.value = "";
   }
 
   return (
@@ -73,9 +91,32 @@ export default function Post(props) {
         <img src={props.likedBy.image} alt={"Perfil " + props.likedBy.perfil} />
         <p>
           Curtido por <a href="#">{props.likedBy.perfil}</a> e&nbsp;
-          <button>outras <span data-test="likes-number">{numLikes.toLocaleString("pt-br")}</span> pessoas</button>
+          <button>
+            outras{" "}
+            <span data-test="likes-number">
+              {numLikes.toLocaleString("pt-br")}
+            </span>{" "}
+            pessoas
+          </button>
         </p>
       </div>
+
+      {comentarios.map((comentario, index) => {
+        return (
+          <Comentario
+            imgAutor={comentario.imgAutor}
+            autor={comentario.autor}
+            conteudo={comentario.conteudo}
+            info={comentario.info}
+            key={comentario.autor + index}
+          />
+        );
+      })}
+
+      <form className="post__send-comment" onSubmit={handlerEnviarComentario}>
+        <input type="text" placeholder="Adicione um comentário..." required />
+        <button type="submit">Publicar</button>
+      </form>
     </article>
   );
 }

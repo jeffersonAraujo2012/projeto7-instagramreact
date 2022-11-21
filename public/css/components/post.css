@@ -114,11 +114,6 @@
   padding: 0;
 }
 
-ion-icon[name="heart"],
-ion-icon[name="heart"]:hover {
-  color: red !important;
-}
-
 @media (max-width: 614px) {
   .post {
     width: 100%;
